@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale:1.0">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="style/tabela-grande.css">
+        <link rel="stylesheet" href="style/efeito-zebrado.css">
         <title>Tabelas Grandes</title>
     </head>
     <body>
@@ -89,26 +89,14 @@
             </tfoot>
         </table>
         <ul>
-            <li>Estrutura de uma tabela grande</li>
-            <ol type="I">
-                <li>Caption - legenda</li>
-                <li>thead</li>
-                <ul>
-                    <li>Podemos ter aqui dentro tr td th</li>
-                </ul>
-                <li>tbody</li>
-                <ul>
-                    <li>Podemos ter aqui dentro tr td th</li>
-                </ul>
-                <li>tfoot</li>
-                <ul>
-                    <li>Podemos ter aqui dentro tr td th</li>
-                </ul>
-            </ol>
-            <li>Tag "scope"</li>
+            <li>Efeito Zebrado</li>
             <ul>
-                <li>Para dados na mesma coluna, colocar no "th" da coluna '&lt;th scope:"<strong>col</strong>"&gt;'</li>
-                <li>Para dados na mesma linha do "th", colocar '&lt;th scope:"<strong>row</strong>"&gt;' </li>
+                <li>Usar a pseudo-classe ":nth-child(Xn)"</li>
+                <ul>
+                    <li>Dentro dos parênteses colocar o número de linhas que devem ser puladas </li>
+                    <li>"odd" dentro dos parênteses fará com que apenas as células ímpares fiquem na cor desejada</li>
+                    <li>"even" funciona da mesma forma que o 'odd' mas para números pares</li>
+                </ul>
             </ul>
         </ul>
     </body>

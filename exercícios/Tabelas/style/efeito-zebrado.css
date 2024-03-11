@@ -19,14 +19,18 @@ caption {
     font-weight: bolder;
     font-size: 1.5em;
     text-transform: uppercase;
-    background-color: rgba(128, 128, 128, 0.471);
-    border: 1px solid black;
-    border-bottom: none;
+    background-color: rgba(0, 0, 0, 0.334);
     padding: 8px;
 }
 
 thead, tfoot {
-    background-color: rgba(128, 128, 128, 0.471);
+    background-color: rgba(0, 0, 0, 0.833);
+    color: white;
+    font-weight: lighter;
+}
+
+tbody tr:nth-child(2n) { /* 2n == de duas em duas linhas */
+    background-color: lightgrey;
 }
 
 td, th {
